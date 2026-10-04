@@ -53,9 +53,15 @@ Build #2 was automatically triggered when Jenkins detected a new source-code com
 
 ![Automatic SCM Trigger](screenshots/automatic-trigger-build.png)
 
-### Docker Deployment and Health Check
+### Docker Desktop Deployment
 
-The application is running as a Docker container deployed by Jenkins. The health endpoint reports an `UP` status.
+Docker Desktop confirms that both the Jenkins server and the application container are running successfully. The deployed `task2-jenkins-app` container exposes the application on port `3000`.
+
+![Docker Desktop Deployment](screenshots/docker-desktop-deployment.png)
+
+### Docker Deployment Verification
+
+The deployment was additionally verified from the command line using `docker ps` and the application's health-check endpoint. The API returned an `UP` status, confirming that the deployed service is operational.
 
 ![Docker Containers and Health Check](screenshots/docker-containers.png)
 
