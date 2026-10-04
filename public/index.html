@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins CI/CD Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="badge">DEVOPS INTERNSHIP • TASK 2</div>
+
+    <h1>Jenkins CI/CD Dashboard</h1>
+
+    <p class="subtitle">
+        Automated build, test and deployment using Jenkins & Docker
+    </p>
+
+    <div class="pipeline">
+        <div class="stage">
+            <span>01</span>
+            <strong>Checkout</strong>
+            <small>GitHub Source</small>
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div class="stage">
+            <span>02</span>
+            <strong>Build</strong>
+            <small>Node.js</small>
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div class="stage">
+            <span>03</span>
+            <strong>Test</strong>
+            <small>Jest</small>
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div class="stage">
+            <span>04</span>
+            <strong>Deploy</strong>
+            <small>Docker</small>
+        </div>
+    </div>
+
+    <div class="status-card">
+        <div>
+            <p>APPLICATION STATUS</p>
+            <h2>● RUNNING</h2>
+        </div>
+
+        <div>
+            <p>DEPLOYMENT</p>
+            <h2>JENKINS</h2>
+        </div>
+
+        <div>
+            <p>CONTAINER</p>
+            <h2>DOCKER</h2>
+        </div>
+    </div>
+
+    <div class="info">
+        <h3>Continuous Integration / Continuous Deployment</h3>
+        <p>
+            Every source-code change is validated by Jenkins before
+            a new Docker container is deployed.
+        </p>
+    </div>
+
+    <footer>
+        Jenkins • Docker • Node.js • GitHub
+    </footer>
+
+</div>
+</body>
+</html>

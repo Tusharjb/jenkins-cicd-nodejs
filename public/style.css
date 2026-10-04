@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1050px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #475569;
+    border-radius: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 20px 0 8px;
+}
+
+.subtitle {
+    color: #94a3b8;
+    margin-bottom: 45px;
+}
+
+.pipeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.stage {
+    width: 160px;
+    padding: 22px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+}
+
+.stage span {
+    display: block;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.stage strong {
+    display: block;
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.stage small {
+    color: #94a3b8;
+}
+
+.arrow {
+    font-size: 24px;
+    color: #64748b;
+}
+
+.status-card {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.status-card div {
+    background: #1e293b;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.status-card p {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.status-card h2 {
+    font-size: 16px;
+}
+
+.status-card div:first-child h2 {
+    color: #4ade80;
+}
+
+.info {
+    margin-top: 30px;
+    padding: 25px;
+    background: #1e293b;
+    border-radius: 10px;
+}
+
+.info p {
+    color: #94a3b8;
+}
+
+footer {
+    margin-top: 35px;
+    color: #64748b;
+}
+
+@media (max-width: 700px) {
+    .status-card {
+        grid-template-columns: 1fr;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
