@@ -37,3 +37,29 @@ Jenkins Pipeline
     |
     v
 Running Node.js Application
+
+## CI/CD Evidence
+
+### Jenkins Pipeline Success
+
+The Jenkins pipeline successfully completed all stages including checkout, dependency installation, testing, Docker image build, deployment, and health verification.
+
+![Jenkins Pipeline Success](screenshots/jenkins-pipeline-success.png)
+
+### Automatic Trigger from SCM Change
+
+Build #2 was automatically triggered when Jenkins detected a new source-code commit through SCM polling.
+
+![Automatic SCM Trigger](screenshots/automatic-trigger-build.png)
+
+### Docker Deployment and Health Check
+
+The application is running as a Docker container deployed by Jenkins. The health endpoint reports an `UP` status.
+
+![Docker Containers and Health Check](screenshots/docker-containers.png)
+
+### Deployed Application
+
+The Node.js application is successfully running after deployment through the Jenkins CI/CD pipeline.
+
+![Deployed Application](screenshots/application-deployed.png)
