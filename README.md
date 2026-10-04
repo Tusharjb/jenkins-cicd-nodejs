@@ -37,6 +37,7 @@ Jenkins Pipeline
     |
     v
 Running Node.js Application
+```
 
 ## CI/CD Evidence
 
